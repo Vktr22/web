@@ -5,9 +5,7 @@ use Illuminate\Support\Facades\Route;
 use app\Http\Controllers\SzobatipusController;
 use app\Http\Controllers\TanuloszobaController;
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
+
 
 
 Route::get('/api/tanuloszobak', [TanuloszobaController::class, 'index']);
